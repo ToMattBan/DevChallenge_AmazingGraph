@@ -1,0 +1,82 @@
+:root {
+    --orange: #D2872C;
+    --gray: #766F68;
+    --white: #FFFFFF;
+}
+
+html, body {
+    background-color: var(--white);
+
+    font-family: 'Roboto', sans-serif;
+    color: var(--gray);
+    font-size: 20px;
+
+    /* GUTTER */
+    margin: 24px;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+header > div {
+    width: 50%;
+}
+
+header .header-logo {
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+header .header-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .header-menu a {
+    margin: 0 12px;
+    color: var(--gray);
+    text-decoration: none;
+}
+
+
+
+.content {
+    margin-top: 128px;
+    display: flex;
+}
+
+.content .content-text {
+    width: 35%;
+    position: relative;
+    left: 64px;
+}
+.content .content-teamImage {
+    width: 65%;
+}
+
+.content .content-text .content-title {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.content .content-text .content-info {
+    margin: 24px 0;
+}
+
+.content .content-text .content-button {
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 15px;
+    display: inline-block;
+    padding: 12px 64px;
+}
+
+.content .content-teamImage img {
+    width: 100%;
+}
