@@ -10,9 +10,13 @@ html, body {
     font-family: 'Roboto', sans-serif;
     color: var(--gray);
     font-size: 20px;
+    margin: 0;
+}
 
-    /* GUTTER */
-    margin: 24px;
+.container {
+    max-width: 1500px;
+    margin: auto;
+    padding: 24px;
 }
 
 
