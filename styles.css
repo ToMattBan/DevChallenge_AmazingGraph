@@ -53,34 +53,77 @@ header .header-menu a {
 .content {
     margin-top: 128px;
     display: flex;
+    justify-content: flex-end;
 }
 
 .content .content-text {
-    width: 35%;
-    position: relative;
-    left: 64px;
+    position: absolute;
+    left: 84px;
+    width: 540px;
 }
+
 .content .content-teamImage {
     width: 65%;
 }
 
 .content .content-text .content-title {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 700;
 }
 
 .content .content-text .content-info {
-    margin: 24px 0;
+    margin: 32px 0 64px 0;
+    font-size: 30px;
 }
 
 .content .content-text .content-button {
     background-color: var(--orange);
     color: var(--white);
+    font-weight: 700;
+    font-size: 30px;
     border-radius: 15px;
     display: inline-block;
-    padding: 12px 64px;
+    padding: 20px 72px;
 }
 
 .content .content-teamImage img {
     width: 100%;
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .content .content-text {
+        width: 360px;
+    }
+
+    .content .content-text .content-title {
+        font-size: 50px;
+    }
+
+    .content .content-text .content-info {
+        margin: 32px 64px 64px 0;
+        font-size: 26px;
+    }
+
+    .content .content-text .content-button {
+        font-size: 24px;
+        padding: 14px 50px;
+    }
+}
+
+@media (max-width: 899px) {
+    .content {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .content .content-teamImage {
+        order: -1;
+        width: 100%;
+    }
+
+    .content .content-text {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
 }
