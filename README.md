@@ -24,3 +24,5 @@ This is the first Challenge I made of the [DevChallenge site](https://devchallen
 Live [https://tomattban.github.io/DevChallenge_AmazingGraph/](here)
 
 This Challenge take about a 4~5hours to complete.
+
+I tried to use just HTML and CSS, but due the menu icon, I have to use some lines of JS too (Embedded in the HTML code)
