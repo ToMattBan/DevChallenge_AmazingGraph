@@ -25,6 +25,7 @@ header {
     display: flex;
     align-items: center;
     margin: 16px 0;
+    position: relative;
 }
 
 header > div {
@@ -46,6 +47,10 @@ header .header-menu a {
     margin: 0 12px;
     color: var(--gray);
     text-decoration: none;
+}
+
+header .header-menu-mobile {
+    display: none;
 }
 
 
@@ -77,6 +82,7 @@ header .header-menu a {
 }
 
 .content .content-text .content-button {
+    border: none;
     background-color: var(--orange);
     color: var(--white);
     font-weight: 700;
@@ -84,6 +90,15 @@ header .header-menu a {
     border-radius: 15px;
     display: inline-block;
     padding: 20px 72px;
+    transition: all 0.2s;
+}
+
+.content .content-text .content-button:hover {
+    filter: brightness(1.2);
+}
+
+.content .content-text .content-button:active {
+    filter: brightness(0.8);
 }
 
 .content .content-teamImage img {
@@ -111,7 +126,20 @@ header .header-menu a {
 }
 
 @media (max-width: 899px) {
+    header .header-logo {
+        font-size: 26px;
+    }
+
+    header .header-menu {
+        display: none;
+    }
+
+    header .header-menu-mobile {
+        display: block;
+    }
+
     .content {
+        margin-top: 64px;
         flex-wrap: wrap;
         text-align: center;
     }
@@ -126,4 +154,80 @@ header .header-menu a {
         width: 100%;
         left: 0;
     }
+
+    .content .content-text .content-title {
+        margin-top: 16px;
+        font-size: 40px;
+    }
+
+    .content .content-text .content-info {
+        margin: 32px 0;
+        font-size: 20px;
+    }
+
+    .content .content-text .content-button {
+        font-size: 24px;
+        padding: 14px 50px;
+    }
+}
+
+
+
+._dn {
+    display: none;
+}
+
+/* MENU HAMBURGUER */
+
+.menu-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease-out;
+}
+
+.menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: var(--gray);
+    transition: all 0.4s ease-out;
+}
+
+.menu-btn.close {
+    /* transform: rotate(180deg); */
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu-mobile-links {
+    display: flex;
+    flex-direction: column;
+    max-height: 75px;
+    position: absolute;
+    right: 0;
+    text-align: end;
+    overflow: hidden;
+    transition: all 0.4s;
+    margin-top: 24px;
+}
+
+.menu-mobile-links.closed {
+    max-height: 0px;
+}
+
+.menu-mobile-links a {
+    text-decoration: none;
+    color: var(--gray);
 }
