@@ -21,7 +21,7 @@
 # Wellcome
 This is the first Challenge I made of the [DevChallenge site](https://devchallenge.com.br/)
 
-Live [https://tomattban.github.io/DevChallenge_AmazingGraph/](here)
+Live [here](https://tomattban.github.io/DevChallenge_AmazingGraph/)
 
 This Challenge take about a 4~5hours to complete.
 
